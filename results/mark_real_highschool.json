@@ -1,0 +1,46 @@
+{
+  "tag": "highschool",
+  "E": 10961,
+  "N": 80,
+  "gate": {
+    "n_hat": 0.0,
+    "kappa_hat": 0.3611215392225151,
+    "gamma_n": 4.9504950495049515e-05,
+    "R_node": NaN,
+    "per_node": null,
+    "strong_memory": false
+  },
+  "rhos": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "curves": {
+    "pair": [
+      {
+        "rho": 0.0,
+        "sig": 0.00012740837052541016,
+        "sig_n": 0.0,
+        "cnk": NaN,
+        "cncw": NaN,
+        "ckcw": NaN
+      },
+      {
+        "rho": 0.5,
+        "sig": 7.997980204344307e-06,
+        "sig_n": 0.0,
+        "cnk": NaN,
+        "cncw": NaN,
+        "ckcw": NaN
+      },
+      {
+        "rho": 1.0,
+        "sig": 1.924404646053146e-15,
+        "sig_n": 0.0,
+        "cnk": NaN,
+        "cncw": NaN,
+        "ckcw": NaN
+      }
+    ]
+  }
+}

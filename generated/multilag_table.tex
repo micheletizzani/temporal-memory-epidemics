@@ -1,0 +1,26 @@
+\begin{table}[h]
+  \centering
+  \small
+  \setlength{\tabcolsep}{4pt}
+  \begin{tabular}{l r l r r r l}
+    \toprule
+    record & nodes & $M_1$ [5--95\% over nodes] & $M_2$ & $M_5$ & $M_{10}$ & lags with positive memory \\
+    \midrule
+    Hospital & 50 & $+0.09$ [$+0.06$, $+0.12$] & $+0.08$ & $+0.02$ & $+0.01$ & 1--2 \\
+    High school & 312 & $+0.20$ [$+0.18$, $+0.21$] & $+0.14$ & $+0.05$ & $-0.03$ & 1--5 \\
+    Conference & 378 & $+0.15$ [$+0.14$, $+0.16$] & $+0.10$ & $+0.04$ & $-0.02$ & 1--4 \\
+    Baboons & 13 & $+0.16$ [$+0.11$, $+0.21$] & $+0.12$ & $+0.10$ & $-0.01$ & 1--6 \\
+    Email & 296 & $-0.01$ [$-0.03$, $+0.01$] & $-0.04$ & $-0.01$ & $-0.07$ & none \\
+    CollegeMsg & 895 & $+0.26$ [$+0.25$, $+0.28$] & $+0.20$ & $+0.12$ & $+0.08$ & 1--10 \\
+    Stack Overflow & 100 & $+0.12$ [$+0.10$, $+0.14$] & $+0.08$ & $+0.04$ & $+0.02$ & 1,2,4 \\
+    Wikibooks & 392 & $+0.21$ [$+0.20$, $+0.23$] & $+0.16$ & $+0.09$ & $+0.05$ & 1--9 \\
+    Wikibooks bots & 89 & $+0.28$ [$+0.05$, $+0.41$] & $+0.37$ & $+0.28$ & $+0.27$ & 1--10 \\
+    Microservices & 73 & $+0.13$ [$+0.01$, $+0.21$] & $+0.10$ & $+0.04$ & $+0.06$ & 1,2,3,10 \\
+    Spiking network & 47 & $-0.04$ [$-0.07$, $0.00$] & $+0.01$ & $0.00$ & $-0.02$ & none \\
+    \emph{control: renewal (lognormal)} & --- & $0.00$ & $-0.02$ & $0.00$ & $-0.01$ & none \\
+    \emph{control: AR(1) log-interval, rho=0.6} & --- & $+0.57$ & $+0.34$ & $+0.06$ & $-0.02$ & 1--5 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Multi-lag memory $M_k$ (within-node rank coefficient) of every record on the event set of the shuffle screen (proximity: day~0 participation trains; directed: initiator trains), with the $5$--$95\%$ interval of $M_1$ over nodes (bootstrap of nodes). Last column: the lags $k\le10$ at which $M_k$ exceeds the $97.5\%$ point of its per-node-shuffle null and is at least $0.05$. The two controls are a heavy-tailed memoryless renewal train and an autoregressive log-interval train with injected memory (Sec.~\ref{sm:multilag}). The email log and the spiking network have no memory at any lag; the spiking network's $M_1$ is negative (regular, refractory-like firing).}
+  \label{tab:multilag}
+\end{table}

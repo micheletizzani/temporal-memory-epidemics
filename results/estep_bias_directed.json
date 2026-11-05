@@ -1,0 +1,34 @@
+{
+ "SNN (bursting)": {
+  "events": 5000,
+  "nodes": 50,
+  "n_obs": 0.9091755697844082,
+  "n_lat": 0.8056858677260235,
+  "kappa_obs": 5.453444493517655,
+  "kappa_lat": 5.3922843932364675,
+  "bias": -0.11382807182437282,
+  "obs_bounds": [
+   "gamma_n at UPPER bound 1/dt_min=1",
+   "gamma_e at LOWER bound 1/(10T)=4.883e-05"
+  ],
+  "lat_bounds": [
+   "gamma_n at UPPER bound 1/dt_min=1",
+   "gamma_e at LOWER bound 1/(10T)=4.883e-05"
+  ]
+ },
+ "Email (EU institution)": {
+  "events": 5000,
+  "nodes": 653,
+  "n_obs": 0.3613618731211634,
+  "n_lat": 0.30011280367993276,
+  "kappa_obs": 134.46212404574013,
+  "kappa_lat": 135.38752996302676,
+  "bias": -0.16949510725137862,
+  "obs_bounds": [
+   "gamma_n at UPPER bound 1/dt_min=1"
+  ],
+  "lat_bounds": [
+   "gamma_n at UPPER bound 1/dt_min=1"
+  ]
+ }
+}

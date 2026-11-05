@@ -1,0 +1,19 @@
+{
+ "ks_timing": 0.09065628476084517,
+ "ks_selection": 0.030624213951557122,
+ "n_timing": 7192.0,
+ "n_selection": 7192.0,
+ "p_timing_nominal": 9.131926573910067e-52,
+ "p_selection_nominal": 2.769679207804334e-06,
+ "mean_tau": 0.9237572449067333,
+ "var_tau": 1.026682591098501,
+ "acf1": -0.05750014098685308,
+ "acf1_se": 0.012050816982703888,
+ "acf1_z": -4.771472429577265,
+ "n_pairs": 6886.0,
+ "p_timing_bootstrap": 0.0,
+ "ks_timing_null_median": 0.0234170949307691,
+ "p_selection_bootstrap": 0.0,
+ "ks_selection_null_median": 0.012871128079419258,
+ "n_bootstrap_ok": 100.0
+}

@@ -1,0 +1,67 @@
+\begin{table}[h]
+  \centering
+  \small
+  \setlength{\tabcolsep}{4pt}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{l r r r r r r r}
+    \toprule
+    record & pooled $M$ & after shuffle & within-node $M$ & within-node rank $M$ & after shuffle & profile removed & repeats collapsed \\
+    \midrule
+    Hospital & $+0.05$ & $0.00$ & $0.00$ & $+0.09$ & $0.00$ & $+0.08$ & $+0.07$ \\
+    High school & $+0.01$ & $-0.01$ & $-0.01$ & $+0.20$ & $-0.01$ & $+0.13$ & $+0.16$ \\
+    Conference & $+0.05$ & $+0.02$ & $+0.03$ & $+0.15$ & $-0.02$ & $+0.22$ & $+0.14$ \\
+    Baboons & $+0.16$ & $+0.04$ & $+0.11$ & $+0.16$ & $0.00$ & $+0.04$ & $+0.14$ \\
+    Email & $+0.05$ & $+0.06$ & $-0.04$ & $-0.01$ & $-0.04$ & $-0.01$ & $-0.01$ \\
+    CollegeMsg & $+0.16$ & $-0.01$ & $+0.14$ & $+0.26$ & $-0.02$ & $+0.24$ & $+0.24$ \\
+    Stack Overflow & $+0.21$ & $+0.03$ & $+0.07$ & $+0.12$ & $0.00$ & $+0.13$ & $+0.13$ \\
+    Wikibooks & $+0.18$ & $-0.01$ & $+0.14$ & $+0.21$ & $-0.01$ & $+0.23$ & $+0.29$ \\
+    Wikibooks bots & $+0.19$ & $0.00$ & $+0.24$ & $+0.28$ & $0.00$ & $+0.32$ & $+0.31$ \\
+    Microservices & $+0.08$ & $+0.02$ & $0.00$ & $+0.13$ & $-0.02$ & $+0.22$ & $+0.13$ \\
+    Spiking network & $+0.34$ & $+0.39$ & $-0.07$ & $-0.04$ & $0.00$ & $-0.04$ & $-0.04$ \\
+    \bottomrule
+  \end{tabular}}
+  \caption{Lag-one memory coefficients under four definitions, on the event set of the shuffle screen
+  (proximity: day~0 participation trains; directed: initiator trains). \emph{Pooled $M$}: Pearson
+  correlation of consecutive intervals pooled over nodes; it contains a
+  between-node scale component that a per-node shuffle keeps (\emph{after shuffle}). \emph{Within-node $M$}: the same
+  after dividing each node's intervals by its mean. \emph{Within-node rank $M$}: the memory coefficient of the main text, the Pearson correlation of
+  within-node interval ranks, robust to heavy tails; \emph{after shuffle}: its value after the per-node order
+  shuffle (mean of six). \emph{Profile removed}: rank $M$ after mapping time through the cumulative global event rate
+  (100 bins), which removes any activity profile shared by all nodes. \emph{Repeats collapsed}: rank $M$ after
+  keeping only events whose partner differs from the node's previous partner. The pooled $M$ of the email log and of
+  the spiking network is entirely a between-node effect (it does not fall after the shuffle, and the within-node
+  coefficients are zero or negative); the other records have order memory by the rank coefficient, which is not
+  explained by a common activity profile or by repeated ties. For orientation, the positive control
+  (exponential node memory of $30$~s injected into the high-school activity pattern) gives a rank coefficient of
+  $0.01$, $0.08$, $0.17$, $0.28$, $0.37$ at $\nnode=0$, $0.2$, $0.4$, $0.6$, $0.8$ (script
+  \texttt{poscon\_memory\_rank.py}). Scripts: \texttt{memory\_artifact\_check.py},
+  \texttt{memory\_modulation\_check.py}, \texttt{memory\_tie\_check.py}.}
+  \label{tab:memdefs}
+\end{table}
+
+\begin{table}[h]
+  \centering
+  \small
+  \setlength{\tabcolsep}{4pt}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{l r r r r r r r}
+    \toprule
+    record & measured $R$ & local-shuffle $R$ & screen $\hat n$ & matched Hawkes $R$ & Poisson $R$ & within-node $M$, record & within-node $M$, matched Hawkes \\
+    \midrule
+    Baboons & $1.01$ & $1.01$ & $0.07$$^\ddagger$ & $1.00$ & $1.00$ & $+0.11$ & $+0.01$ \\
+    Conference & $0.97$ & $0.97$ & $0.13$$^\ddagger$ & $0.93$ & $1.04$ & $+0.03$ & $-0.01$ \\
+    High school & $0.97$ & $0.98$ & $0.56$ & $0.94$ & $1.02$ & $-0.01$ & $-0.02$ \\
+    Hospital & $0.92$ & $0.99$ & $0.99$$^\ddagger$ & $0.92$--$0.99$ & $1.01$ & $0.00$ & $+0.19$ \\
+    \bottomrule
+  \end{tabular}}
+  \caption{The shuffle ratio of each record compared with controls run through the identical screen. \emph{Measured $R$}
+  is the screen of the main text. \emph{Local-shuffle $R$} shuffles intervals only within blocks of $20$ consecutive
+  intervals per node, which keeps slow rate changes. \emph{Screen $\hat n$} is the single-exponential
+  branching ratio of the screen's own estimator; $\ddagger$: its fitted rate sits at an end of the rate grid (the
+  slowest, $10^{-3}$\,s$^{-1}$, or the fastest, $10$\,s$^{-1}$, far below the $20$\,s resolution), so $g$ is not identified under
+  this estimator. \emph{Matched Hawkes $R$}: range over three surrogates of exponential self-excitation at the screen's fitted
+  $(\hat n,\hat\gamma)$, with the record's own per-node event counts, duration and time resolution. \emph{Poisson
+  $R$}: the same without self-excitation. The last two columns compare the within-node Pearson memory coefficient of the
+  record and of the matched Hawkes surrogate. Script: \texttt{record\_matched\_surrogate.py}.}
+  \label{tab:matched_R}
+\end{table}

@@ -1,0 +1,90 @@
+{
+ "Hospital ward": {
+  "events": 4316,
+  "kept": 3589,
+  "rank_raw": 0.09347789724411076,
+  "rank_collapsed": 0.0691856846846582,
+  "within_raw": 0.0017409792870194873,
+  "within_collapsed": -0.001255973811624535
+ },
+ "High school": {
+  "events": 24944,
+  "kept": 17750,
+  "rank_raw": 0.1985164404498485,
+  "rank_collapsed": 0.1629296079145523,
+  "within_raw": -0.00563313270035655,
+  "within_collapsed": -0.0051635840043776395
+ },
+ "Conference (SFHH)": {
+  "events": 23428,
+  "kept": 20353,
+  "rank_raw": 0.149812835332639,
+  "rank_collapsed": 0.13704440576809018,
+  "within_raw": 0.02763415718190158,
+  "within_collapsed": 0.03878152467970161
+ },
+ "Baboons": {
+  "events": 2730,
+  "kept": 2120,
+  "rank_raw": 0.1575091488892205,
+  "rank_collapsed": 0.14333736624968407,
+  "within_raw": 0.10759445046684349,
+  "within_collapsed": 0.1141853733167912
+ },
+ "Email (EU institution)": {
+  "events": 10000,
+  "kept": 8432,
+  "rank_raw": -0.00768563420137267,
+  "rank_collapsed": -0.008790772441794839,
+  "within_raw": -0.04273947617260459,
+  "within_collapsed": -0.046536202411598906
+ },
+ "CollegeMsg (Direct Msgs)": {
+  "events": 59835,
+  "kept": 39341,
+  "rank_raw": 0.2600307433634758,
+  "rank_collapsed": 0.23983820685764257,
+  "within_raw": 0.14000367012105094,
+  "within_collapsed": 0.1438489811862664
+ },
+ "Stack Overflow": {
+  "events": 10000,
+  "kept": 8229,
+  "rank_raw": 0.12108102117783472,
+  "rank_collapsed": 0.12995987825138103,
+  "within_raw": 0.06943207375277212,
+  "within_collapsed": 0.07025601242776058
+ },
+ "Wikibooks": {
+  "events": 60000,
+  "kept": 29029,
+  "rank_raw": 0.2140257883664068,
+  "rank_collapsed": 0.2929152463602617,
+  "within_raw": 0.1420150645197013,
+  "within_collapsed": 0.19899600676881837
+ },
+ "Wikibooks bots": {
+  "events": 26950,
+  "kept": 22499,
+  "rank_raw": 0.2762769182087422,
+  "rank_collapsed": 0.30601076146980505,
+  "within_raw": 0.24294502882166774,
+  "within_collapsed": 0.2388523777799609
+ },
+ "Microservices": {
+  "events": 10000,
+  "kept": 5129,
+  "rank_raw": 0.13371040489323638,
+  "rank_collapsed": 0.13145323770511366,
+  "within_raw": 0.004990091083152936,
+  "within_collapsed": 0.0038877764886375912
+ },
+ "SNN (bursting)": {
+  "events": 60000,
+  "kept": 60000,
+  "rank_raw": -0.03715214650639187,
+  "rank_collapsed": -0.03715214650639187,
+  "within_raw": -0.07498464614450193,
+  "within_collapsed": -0.07498464614450193
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "Stack Overflow": {
+  "events": 111835,
+  "initiators": 400,
+  "targets": 1790,
+  "overlap": 389,
+  "M1_initiator": 0.1536481325317125,
+  "M1_both": 0.14220525236156023
+ },
+ "Wikibooks": {
+  "events": 412649,
+  "initiators": 1635,
+  "targets": 5036,
+  "overlap": 0,
+  "M1_initiator": 0.23699927211261673,
+  "M1_both": 0.23980753395489363
+ }
+}

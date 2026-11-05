@@ -1,0 +1,20 @@
+{
+ "High school": {
+  "contacts": 12472,
+  "repeat_fraction": 0.7654746632456703,
+  "uses_per_tie": 4.263931623931624,
+  "ties": 2925
+ },
+ "Hospital ward": {
+  "contacts": 2158,
+  "repeat_fraction": 0.8007414272474513,
+  "uses_per_tie": 5.018604651162791,
+  "ties": 430
+ },
+ "Conference (SFHH)": {
+  "contacts": 11714,
+  "repeat_fraction": 0.5049513402765922,
+  "uses_per_tie": 2.020003448870495,
+  "ties": 5799
+ }
+}

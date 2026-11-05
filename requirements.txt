@@ -1,0 +1,7 @@
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+pytest>=7.0
+# Only for extracting the Allen Brain Observatory data (experiments/07_data_preparation):
+# allensdk
+# h5py

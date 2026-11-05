@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "Code for: Fundamental limits to identifying node and tie memory in temporal networks"
+authors:
+  - family-names: Tizzani
+    given-names: Michele
+license: MIT
+preferred-citation:
+  type: article
+  title: "Fundamental limits to identifying node and tie memory in temporal networks: marginal artefacts and spreading dynamics"
+  authors:
+    - family-names: Tizzani
+      given-names: Michele
+  journal: "Physical Review Research"
+  year: 2026
+  doi: "10.1103/n24h-kkc6"

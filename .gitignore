@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+.pytest_cache/
+.ipynb_checkpoints/
+# raw data are not redistributed
+data/*
+!data/README.md
+# keep the vector figures only
+figures/*.png
+Manifest.toml

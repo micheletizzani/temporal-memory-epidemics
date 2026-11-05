@@ -1,0 +1,25 @@
+\begin{table}[h]
+  \centering
+  \small
+  \begin{tabular}{l r r r r}
+    \toprule
+    record & $\beta$ & recorded final size & naive fit / recorded & corrected / recorded \\
+    \midrule
+    High school & $0.05$ & $0.044\pm0.004$ & $0.61$ & $0.72$ \\
+     & $0.1$ & $0.081\pm0.006$ & $0.53$ & $0.67$ \\
+     & $0.15$ & $0.113\pm0.010$ & $0.51$ & $0.83$ \\
+     & $0.2$ & $0.150\pm0.013$ & $0.65$ & $1.02$ \\
+     & $0.3$ & $0.233\pm0.018$ & $0.75$ & $1.46$ \\
+     & $0.45$ & $0.350\pm0.024$ & $0.87$ & $1.67$ \\
+    \midrule
+    Baboons & $0.001$ & $0.229\pm0.020$ & $0.99$ & $0.93$ \\
+     & $0.002$ & $0.489\pm0.031$ & $0.84$ & $0.87$ \\
+     & $0.004$ & $0.716\pm0.032$ & $0.98$ & $1.00$ \\
+     & $0.008$ & $0.891\pm0.028$ & $0.94$ & $0.96$ \\
+     & $0.015$ & $0.971\pm0.016$ & $0.97$ & $0.95$ \\
+     & $0.03$ & $0.982\pm0.013$ & $0.97$ & $0.99$ \\
+    \bottomrule
+  \end{tabular}
+  \caption{Forecast of the recorded outbreak from the fitted model. Temporal-network SIR final size of the recorded contacts (mean $\pm$ s.e.\ over $100$ replicates), and the ratio of the final size from the naive fit (fitted $\hat{n}_{\mathrm{node}}$ and $\hat\kappa$) and from the corrected model ($\nnode=0$, same $\hat\kappa$) to it, at matched contact count (\texttt{fitted\_vs\_empirical.py}).}
+  \label{tab:forecast}
+\end{table}

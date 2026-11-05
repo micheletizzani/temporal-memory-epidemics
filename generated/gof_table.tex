@@ -1,0 +1,27 @@
+\begin{table}[h]
+  \centering
+  \small
+  \setlength{\tabcolsep}{4pt}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{l r r r r r r r r}
+    \toprule
+    record & events & KS (timing) & zero atom (\%) & KS, atom removed & $z_{\mathrm{acf}}$ & KS (selection) & $p$ (timing) & $p$ (selection) \\
+    \midrule
+    High school (5.0\,h window) & 7{,}192 & $0.093$ & $9.3$ & $0.063$ & $-4.1$ & $0.030$ & $<0.01$ & $<0.01$ \\
+    High school (day 0) & 12{,}472 & $0.082$ & $8.2$ & $0.037$ & $-4.1$ & $0.028$ & -- & -- \\
+    Hospital & 2{,}158 & $0.066$ & $6.6$ & $0.051$ & $-1.6$ & $0.031$ & $<0.01$ & $0.17$ \\
+    Conference & 11{,}714 & $0.106$ & $10.6$ & $0.063$ & $-6.1$ & $0.014$ & $<0.01$ & $0.79$ \\
+    Baboons & 1{,}365 & $0.043$ & $4.3$ & $0.049$ & $+0.0$ & $0.025$ & -- & -- \\
+    Email & 10{,}000 & $0.342$ & $34.2$ & $0.265$ & $+0.3$ & $0.018$ & -- & -- \\
+    CollegeMsg & 59{,}835 & $0.116$ & $0.3$ & $0.115$ & $+16.5$ & $0.027$ & -- & -- \\
+    Stack Overflow & 10{,}000 & $0.129$ & $0.0$ & $0.129$ & $+5.2$ & $0.017$ & -- & -- \\
+    Wikibooks & 60{,}000 & $0.101$ & $0.2$ & $0.101$ & $+3.5$ & $0.039$ & -- & -- \\
+    Wikibooks bots & 26{,}950 & $0.138$ & $7.8$ & $0.120$ & $+0.1$ & $0.108$ & -- & -- \\
+    Microservices & 10{,}000 & $0.523$ & $52.3$ & $0.393$ & $-4.9$ & $0.052$ & -- & -- \\
+    Spiking network & 60{,}000 & $0.907$ & $90.7$ & $0.988$ & $-24.0$ & $0.055$ & -- & -- \\
+    Cortex & 58{,}138 & $0.030$ & $0.0$ & $0.030$ & $+2.1$ & -- & -- & -- \\
+    \bottomrule
+  \end{tabular}}
+  \caption{Goodness of fit of the twelve records, from the same fit as Fig.~3(d) (script \texttt{record\_gof.py}). KS: Kolmogorov--Smirnov statistic of the time-rescaled timing residuals against $\mathrm{Exp}(1)$, and of the selection probability integral transform; zero atom: fraction of residuals exactly zero (simultaneous events of one initiator); $z_{\mathrm{acf}}$: within-node lag-one serial correlation of the timing residuals as a $z$-score. Values are means over five label imputations for the proximity records. $p$: parametric-bootstrap calibration with \gofBootReps{} replicates (simulate from the fit, refit, recompute; \texttt{gof\_bootstrap.py}); $<0.01$ means no bootstrap replicate reached the observed statistic. The KS statistic equals the zero-atom fraction to printed precision for the three SocioPatterns records, the baboons, the email log, the microservices and the spiking network.}
+  \label{tab:gof}
+\end{table}

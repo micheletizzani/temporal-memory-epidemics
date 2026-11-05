@@ -5,7 +5,7 @@ import numpy as np
 import os
 import argparse
 
-def simulate_izhikevich(N_e=40, N_i=10, p_connect=0.2, T_ms=10000, out_file="snn_bursty_network.txt"):
+def simulate_izhikevich(N_e=40, N_i=10, p_connect=0.2, T_ms=10000, out_file="snn_refractory_network.txt"):
     """
     Simulates a small Izhikevich spiking neural network and logs events as a directed 
     temporal network (t, i, j) where i is the presynaptic neuron and j is the postsynaptic target.
@@ -80,8 +80,8 @@ def simulate_izhikevich(N_e=40, N_i=10, p_connect=0.2, T_ms=10000, out_file="snn
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--N", type=int, default=50, help="Total number of neurons")
-    parser.add_argument("--T", type=int, default=60000, help="Simulation time in ms")
-    parser.add_argument("--out", type=str, default="../../data/snn_bursty_network.txt")
+    parser.add_argument("--T", type=int, default=100000, help="Simulation time in ms")
+    parser.add_argument("--out", type=str, default="data/snn_refractory_network.txt")
     args = parser.parse_args()
     
     N_e = int(args.N * 0.8)
